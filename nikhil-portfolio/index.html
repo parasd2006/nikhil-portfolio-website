@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikhil | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">Nikhil<span class="dot">.</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Nikhil<span class="dot">.</span></h1>
+          <div class="hero-role">
+            <span class="role-static">I'm a </span>
+            <span class="role-dynamic" id="roleDynamic"></span>
+          </div>
+          <p class="hero-desc">
+            Crafting powerful web experiences — from pixel-perfect frontends to
+            robust backends. I turn ideas into scalable digital products.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">Hire Me</a>
+            <a href="#projects" class="btn-outline">View Projects</a>
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://www.instagram.com/realkaali/?__pwa=1#"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="mailto:kumarnikhil9585@gmail.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="tel:+918894836912" aria-label="Phone"
+              ><i class="fas fa-phone"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <div class="img-ring ring1"></div>
+          <div class="img-ring ring2"></div>
+          <img
+            src="assets/nkl.jpeg"
+            alt="Nikhil - Full Stack Developer"
+            class="hero-img"
+          />
+          <div class="badge badge-exp">
+            <span class="badge-num">2+</span>
+            <span class="badge-label">Years Exp.</span>
+          </div>
+          <div class="badge badge-proj">
+            <span class="badge-num">20+</span>
+            <span class="badge-label">Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down"><span></span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Who Am I?</h2>
+        <div class="about-grid">
+          <div class="about-img-wrap">
+            <img src="assets/nkl.jpeg" alt="Nikhil" class="about-img" />
+            <div class="about-card-float">
+              <i class="fas fa-code"></i><span>Full Stack Dev</span>
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+              Hey! I'm <strong>Nikhil</strong>, a passionate
+              <strong>Full Stack Developer</strong> based in India. I specialize
+              in building modern, responsive web applications that are both
+              visually stunning and functionally powerful.
+            </p>
+            <p>
+              Whether it's a sleek landing page, an enterprise-level web app, or
+              a custom e-commerce platform — I bring your vision to life with
+              clean code and creative design.
+            </p>
+            <p>
+              I'm available for <strong>freelance projects</strong>,
+              collaborations, and full-time opportunities. Let's build something
+              amazing together!
+            </p>
+            <div class="about-info-grid">
+              <div class="info-item">
+                <span class="info-label">Phone</span
+                ><span class="info-val">+91 88948 36912</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Email</span
+                ><span class="info-val">kumarnikhil9585@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Location</span
+                ><span class="info-val">India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Available</span
+                ><span class="info-val available">Open to Work ✓</span>
+              </div>
+            </div>
+            <a
+              href="#contact"
+              class="btn-primary"
+              style="display: inline-block; margin-top: 1.5rem"
+              >Let's Talk</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-tag">My Skills</div>
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-sub">
+          Technologies I work with — frontend, backend, and databases.
+        </p>
+        <div class="skills-category">
+          <h3 class="cat-title"><i class="fas fa-laptop-code"></i> Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #e34f26">
+                <i class="fab fa-html5"></i>
+              </div>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #264de4">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #f7df1e; color: #000">
+                <i class="fab fa-js"></i>
+              </div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #61dafb; color: #000">
+                <i class="fab fa-react"></i>
+              </div>
+              <span>React.js</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #4fc08d">
+                <i class="fab fa-vuejs"></i>
+              </div>
+              <span>Vue.js</span>
+            </div>
+            <div class="skill-card">
+              <div
+                class="skill-icon"
+                style="background: #0d1117; border: 1px solid #444"
+              >
+                <span style="font-size: 12px; font-weight: 700">Next</span>
+              </div>
+              <span>Next.js</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #7c3aed">
+                <span style="font-size: 11px; font-weight: 700">TS</span>
+              </div>
+              <span>TypeScript</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #06b6d4">
+                <span style="font-size: 10px; font-weight: 700">TW</span>
+              </div>
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #563d7c">
+                <i class="fab fa-bootstrap"></i>
+              </div>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3 class="cat-title"><i class="fas fa-server"></i> Backend</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #339933">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-card">
+              <div
+                class="skill-icon"
+                style="background: #000; border: 1px solid #444"
+              >
+                <span style="font-size: 10px; font-weight: 700">EXP</span>
+              </div>
+              <span>Express.js</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #3776ab">
+                <i class="fab fa-python"></i>
+              </div>
+              <span>Python</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #8892be">
+                <span style="font-size: 11px; font-weight: 700">PHP</span>
+              </div>
+              <span>PHP</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #e44d26">
+                <span style="font-size: 10px; font-weight: 700">JAVA</span>
+              </div>
+              <span>Java</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #00acd7">
+                <span style="font-size: 11px; font-weight: 700">Go</span>
+              </div>
+              <span>Golang</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #a97bff">
+                <span style="font-size: 10px; font-weight: 700">GQL</span>
+              </div>
+              <span>GraphQL</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #cb3837">
+                <span style="font-size: 9px; font-weight: 700">REST</span>
+              </div>
+              <span>REST API</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3 class="cat-title"><i class="fas fa-database"></i> Databases</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #47a248">
+                <span style="font-size: 9px; font-weight: 700">MONGO</span>
+              </div>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #4479a1">
+                <span style="font-size: 9px; font-weight: 700">MySQL</span>
+              </div>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #336791">
+                <span style="font-size: 9px; font-weight: 700">PSQL</span>
+              </div>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #dc382d">
+                <span style="font-size: 10px; font-weight: 700">Redis</span>
+              </div>
+              <span>Redis</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #003b57">
+                <span style="font-size: 9px; font-weight: 700">SQLite</span>
+              </div>
+              <span>SQLite</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #ff9900">
+                <span style="font-size: 10px; font-weight: 700">AWS</span>
+              </div>
+              <span>AWS RDS</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3 class="cat-title"><i class="fas fa-tools"></i> Tools & Others</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #f05032">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #181717">
+                <i class="fab fa-github"></i>
+              </div>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #2496ed">
+                <i class="fab fa-docker"></i>
+              </div>
+              <span>Docker</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #ff9900">
+                <i class="fab fa-aws"></i>
+              </div>
+              <span>AWS</span>
+            </div>
+            <div class="skill-card">
+              <div
+                class="skill-icon"
+                style="background: #000; border: 1px solid #444"
+              >
+                <span style="font-size: 10px; font-weight: 700">Vercel</span>
+              </div>
+              <span>Vercel</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background: #646cff">
+                <span style="font-size: 10px; font-weight: 700">Vite</span>
+              </div>
+              <span>Vite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-tag">My Work</div>
+        <h2 class="section-title">Live Projects</h2>
+        <p class="section-sub">
+          Real-world websites I've built — click to visit them live.
+        </p>
+        <div class="projects-grid">
+          <a
+            href="https://addresshome.com/"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <div class="project-img-wrap">
+              <img
+                src="assets/addresshome.png"
+                alt="AddressHome"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                  border-radius: 10px 10px 0 0;
+                "
+              />
+              <div class="project-overlay">
+                <span class="visit-btn"
+                  ><i class="fas fa-external-link-alt"></i> Visit Live</span
+                >
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-url">addresshome.com</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3>AddressHome</h3>
+                <span class="project-live"
+                  ><i class="fas fa-circle"></i> Live</span
+                >
+              </div>
+              <p>
+                A modern real estate platform for property listings, home buying
+                & renting — built with seamless UX and advanced search.
+              </p>
+              <div class="project-tags">
+                <span>Real Estate</span><span>Web App</span
+                ><span>Full Stack</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.trevifurniture.com/"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <div class="project-img-wrap">
+              <img
+                src="assets/trevifurniture.png"
+                alt="Trevi Furniture"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                  border-radius: 10px 10px 0 0;
+                "
+              />
+              <div class="project-overlay">
+                <span class="visit-btn"
+                  ><i class="fas fa-external-link-alt"></i> Visit Live</span
+                >
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-url">trevifurniture.com</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3>Trevi Furniture</h3>
+                <span class="project-live"
+                  ><i class="fas fa-circle"></i> Live</span
+                >
+              </div>
+              <p>
+                Premium furniture e-commerce store with elegant product
+                showcases, smooth navigation, and complete shopping experience.
+              </p>
+              <div class="project-tags">
+                <span>E-Commerce</span><span>Furniture</span><span>UI/UX</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.trawell.in/"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <div class="project-img-wrap">
+              <img
+                src="assets/trawell.png"
+                alt="Trawell.in"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                  border-radius: 10px 10px 0 0;
+                "
+              />
+              <div class="project-overlay">
+                <span class="visit-btn"
+                  ><i class="fas fa-external-link-alt"></i> Visit Live</span
+                >
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-url">trawell.in</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3>Trawell.in</h3>
+                <span class="project-live"
+                  ><i class="fas fa-circle"></i> Live</span
+                >
+              </div>
+              <p>
+                India's travel discovery platform featuring curated
+                destinations, trip guides and travel itineraries for explorers.
+              </p>
+              <div class="project-tags">
+                <span>Travel</span><span>Platform</span><span>Frontend</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://littleindiaofdenver.com/"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <div class="project-img-wrap">
+              <img
+                src="assets/littleindia.png"
+                alt="Little India of Denver"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                  border-radius: 10px 10px 0 0;
+                "
+              />
+              <div class="project-overlay">
+                <span class="visit-btn"
+                  ><i class="fas fa-external-link-alt"></i> Visit Live</span
+                >
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-url">littleindiaofdenver.com</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3>Little India of Denver</h3>
+                <span class="project-live"
+                  ><i class="fas fa-circle"></i> Live</span
+                >
+              </div>
+              <p>
+                Restaurant website for an authentic Indian dining experience in
+                Denver — menu, reservations & vibrant cultural design.
+              </p>
+              <div class="project-tags">
+                <span>Restaurant</span><span>Business</span
+                ><span>Web Design</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://primushospital.com/"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <div class="project-img-wrap">
+              <img
+                src="assets/primus.png"
+                alt="Primus Hospital"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                  border-radius: 10px 10px 0 0;
+                "
+              />
+              <div class="project-overlay">
+                <span class="visit-btn"
+                  ><i class="fas fa-external-link-alt"></i> Visit Live</span
+                >
+              </div>
+              <div class="project-mockup">
+                <div class="mockup-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-url">primushospital.com</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header">
+                <h3>Primus Hospital</h3>
+                <span class="project-live"
+                  ><i class="fas fa-circle"></i> Live</span
+                >
+              </div>
+              <p>
+                Professional hospital website with doctor listings, department
+                info, appointment booking and patient-first design.
+              </p>
+              <div class="project-tags">
+                <span>Healthcare</span><span>Corporate</span
+                ><span>Full Stack</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-tag">What I Offer</div>
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="svc-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>UI/UX & Frontend Dev</h3>
+            <p>
+              Pixel-perfect, responsive websites with modern animations. Built
+              with React, Next.js, and Tailwind CSS.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="svc-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Development</h3>
+            <p>
+              Scalable REST APIs and server-side solutions using Node.js,
+              Express, Python, and more.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="svc-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Full Stack Web Apps</h3>
+            <p>
+              End-to-end web applications — from database design to deployment
+              on AWS, Vercel, or custom VPS.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="svc-icon"><i class="fas fa-shopping-cart"></i></div>
+            <h3>E-Commerce Solutions</h3>
+            <p>
+              Custom online stores with payment gateways, admin panels, and
+              inventory management.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="svc-icon"><i class="fas fa-database"></i></div>
+            <h3>Database Architecture</h3>
+            <p>
+              Designing efficient schemas in MongoDB, MySQL, PostgreSQL with
+              optimization and security.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="svc-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Responsive Web Design</h3>
+            <p>
+              Mobile-first websites that look stunning on every device — phone,
+              tablet, or desktop.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Contact Me</h2>
+        <p class="section-sub">
+          Have a project in mind? Let's talk. I'm always open to new
+          opportunities.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>Phone / WhatsApp</h4>
+                <a href="tel:+918894836912">+91 88948 36912</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:kumarnikhil9585@gmail.com"
+                  >kumarnikhil9585@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+              <div>
+                <h4>Instagram</h4>
+                <a
+                  href="https://www.instagram.com/realkaali/?__pwa=1#"
+                  target="_blank"
+                  >@realkaali</a
+                >
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <span>India 🇮🇳</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you soon.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">Nikhil<span class="dot">.</span></div>
+        <p>Full Stack Developer · Available for Freelance</p>
+        <div class="footer-socials">
+          <a
+            href="https://www.instagram.com/realkaali/?__pwa=1#"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="mailto:kumarnikhil9585@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:+918894836912"><i class="fas fa-phone"></i></a>
+        </div>
+        <p class="footer-copy">© 2025 Nikhil. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
